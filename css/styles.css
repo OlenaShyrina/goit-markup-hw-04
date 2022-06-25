@@ -148,7 +148,6 @@ nav {
    padding-top: 32px;
    padding-bottom: 32px;
 
-
    font-weight: 500;
    line-height: 1.14;
    letter-spacing: 0.02em;
@@ -161,6 +160,23 @@ nav {
  .contacts .contact:focus {
     color: var(--accent-color);
  }
+
+ .icon-envelope {
+    margin-right: 10px;
+ }
+
+ .icon-enlope:hover {
+    column-fill: var(--accent-color);
+ }
+
+ .icon-smartphone {
+   margin-right: 10px;
+ }
+
+ .icon-smartphone:hover {
+    column-fill: var(--accent-color);
+ }
+
 
  /* Body index */
 
@@ -225,11 +241,6 @@ nav {
    font-size: 36px;
    line-height: 1.17;
    color: var(--primary-text-color);
-   text-align: center;
-}
-
-.section-title.centered {
-
    text-align: center;
 }
 
@@ -314,6 +325,21 @@ margin-left: 30px;
 .position {
    font-size: 16px;
    line-height: 1.19;
+}
+
+.social-links {
+   display: flex;
+   gap: 10px;
+   }
+
+/* Clients */
+
+.section.clients {
+   padding-top: 0;
+}
+
+.clients.list {
+   display: flex;
 }
 
 /* Portfolio */
@@ -409,13 +435,19 @@ margin-left: 30px;
    line-height: 1.88;
 }
 
+/* Our clients */
+
+.section-title.clients {
+   margin-bottom: 40px;
+}
+
 /* Footer */
 
 .footer {
    padding-top: 60px;
    padding-bottom: 60px;
    line-height: 1.71;
-   background: #2F303A;
+   background-color: #2F303A;
   
 }
 
@@ -445,4 +477,11 @@ margin-left: 30px;
 .contacts-footer .contact-down:hover,
 .contacts-footer .contact-down:focus {
    color: var(--accent-color);
+}
+
+.footer-title {
+      font-weight: 700;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: #FFFFFF;
 }
