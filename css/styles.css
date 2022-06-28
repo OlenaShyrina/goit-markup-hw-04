@@ -297,11 +297,12 @@ nav {
 
 .wedo.list {
   display: flex;
+  gap: 30px;
 }
 
-.wedo.list .item + .item {
+/* .wedo.list .item + .item {
   margin-left: 30px;
-}
+} */
 
 /* Section Our team */
 
@@ -314,7 +315,7 @@ nav {
   gap: 30px;
 }
 
-.team.list .item {
+.team.list .teammate {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -330,7 +331,7 @@ nav {
   display: block;
 }
 
-.teammate-name {
+.name {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -347,30 +348,26 @@ nav {
 
 .socials {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
-.socials.list .item {
-  background-color: aqua;
-  border: none;
-  border-radius: 50%;
-}
-
-/* .socials .link {
+.socials .link {
   display: block;
-  margin: 10px;
-  font-size: 0;
-} */
-
-.socials .link-icon {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
   fill: #afb1b8;
 }
 
-.socials .link-icon:hover,
-.socials .link-icon:focus {
-  fill: #ffffff;
+.socials .link:hover,
+.socials .link:focus {
   background-color: var(--accent-color);
+  fill: #ffffff;
+  border: none;
+  border-radius: 50%;
 }
 
 /* Clients */
@@ -393,28 +390,16 @@ nav {
 
 .client-link {
   display: block;
-  padding: 16px 31px;
-  height: 92px;
+  height: 100%;
+  fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.client-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 106px;
-  height: 60px;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--accent-color);
+.client-link:hover,
+.client-link:focus {
   fill: var(--accent-color);
-}
-
-.client-icon {
-  fill: #afb1b8;
+  border: 1px solid var(--accent-color);
 }
 
 /* Portfolio */
@@ -563,24 +548,23 @@ nav {
 }
 
 .socials.footer {
-  width: 44px;
-  height: 44px;
+  margin: 0;
   padding: 0;
 }
 
-.socials .link {
-  font-size: 0;
+.socials.footer .link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+}
+
+.socials.footer .link:hover,
+.socials.footer .link:focus {
+  background-color: var(--accent-color);
 }
 
 .link-icon.footer {
   padding: 0;
-}
-
-.socials .link-icon.footer {
   fill: #ffffff;
-}
-
-.socials .link-icon.footer:hover,
-.socials .link-icon.footer:focus {
-  background-color: var(--accent-color);
+  background-color: transparent;
 }
